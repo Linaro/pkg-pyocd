@@ -1,0 +1,9 @@
+pyocd for Linaro
+----------------
+
+The package is not suitable for Debian upload - it contains pre-compiled
+ARM binaries. The original tarball has also been repacked to make the
+directory name all lowercase.
+
+ -- Neil Williams <codehelp@debian.org>  Fri, 28 Jul 2017 09:49:31 +0100
+

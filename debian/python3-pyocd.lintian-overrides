@@ -1,0 +1,5 @@
+python3-pyocd: new-package-should-close-itp-bug
+python3-pyocd: binary-without-manpage usr/bin/pyocd-flashtool
+python3-pyocd: binary-without-manpage usr/bin/pyocd-gdbserver
+python3-pyocd: binary-without-manpage usr/bin/pyocd-tool
+

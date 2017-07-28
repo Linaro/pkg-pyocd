@@ -1,0 +1,5 @@
+pyocd (0.8.1a2.dev66-1) unstable; urgency=medium
+
+  * Initial packaging for Linaro.
+
+ -- Neil Williams <codehelp@debian.org>  Fri, 28 Jul 2017 11:21:02 +0100
