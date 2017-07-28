@@ -3,18 +3,18 @@ Section: embedded
 Priority: optional
 Maintainer: Neil Williams <codehelp@debian.org>
 Build-Depends: debhelper (>= 9), dh-python,
- python3-all, python3-setuptools-scm, python3-setuptools,
- python3-usb, python3-future,
- python3-websocket
+ python-all, python-setuptools-scm, python-setuptools,
+ python-usb, python-future,
+ python-websocket
 Standards-Version: 4.0.0
 Homepage: https://github.com/mbedmicro/pyOCD
-X-Python3-Version: >= 3.2
+X-Python3-Version: >= 2.6
 #Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/pyocd.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/pyocd.git/
 #Testsuite: autopkgtest-pkg-python
 
-Package: python3-pyocd
+Package: python-pyocd
 Architecture: all
-Depends: ${python3:Depends}, ${misc:Depends}
+Depends: ${python:Depends}, ${misc:Depends}
 Description: ARM Cortex-M programming tools
  Tools for programming and debugging ARM Cortex-M microcontrollers.
