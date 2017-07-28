@@ -3,7 +3,7 @@ Section: embedded
 Priority: optional
 Maintainer: Neil Williams <codehelp@debian.org>
 Build-Depends: debhelper (>= 9), dh-python,
- python3-all, python3-setuptools,
+ python3-all, python3-setuptools-scm, python3-setuptools,
  python3-usb, python3-future,
  python3-websocket
 Standards-Version: 4.0.0
