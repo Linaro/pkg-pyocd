@@ -1,5 +1,5 @@
 Source: pyocd
-Section: embedded
+Section: non-free/embedded
 Priority: optional
 Maintainer: Neil Williams <codehelp@debian.org>
 Build-Depends: debhelper (>= 9), dh-python,
@@ -9,9 +9,8 @@ Build-Depends: debhelper (>= 9), dh-python,
 Standards-Version: 4.0.0
 Homepage: https://github.com/mbedmicro/pyOCD
 X-Python3-Version: >= 2.6
-#Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/pyocd.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/pyocd.git/
-#Testsuite: autopkgtest-pkg-python
+Vcs-Git: https://github.com/Linaro/pkg-pyocd.git
+Vcs-Browser: https://github.com/Linaro/pkg-pyocd
 
 Package: python-pyocd
 Architecture: all
