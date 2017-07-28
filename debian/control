@@ -15,6 +15,6 @@ X-Python3-Version: >= 2.6
 
 Package: python-pyocd
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}
+Depends: python-usb (>= 1.0.0), ${python:Depends}, ${misc:Depends}
 Description: ARM Cortex-M programming tools
  Tools for programming and debugging ARM Cortex-M microcontrollers.
