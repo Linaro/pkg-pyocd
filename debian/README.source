@@ -1,9 +1,32 @@
 pyocd for Linaro
 ----------------
 
-The package is not suitable for Debian upload - it contains pre-compiled
-ARM binaries. The original tarball has also been repacked to make the
-directory name all lowercase.
+The source package is not suitable for Debian upload - it contains
+pre-compiled ARM binaries. However, these are not used by the python
+bindings, only for usage with gdb.
+
+Repacking the original tarball
+------------------------------
+
+The original tarball needs to be repacked to make the directory
+name all lowercase.
+
+In the pyOCD git directory, run:
+
+$ rm dist/*
+$ python setup.py sdist
+
+Now convert the tarball by running the script in the packaging support
+in the pyOCD git directory (where the tarball exists in ./dist/).
+e.g.
+
+$ ../../../debian/convert.py
+Extracting to: /tmp/tmpbo0oe1zw
+Looking in /home/neil/code/debian/pyocd/pyOCD/dist
+Renaming /tmp/tmpbo0oe1zw/pyOCD-0.8.1a2.dev66 to /tmp/tmpbo0oe1zw/pyocd-0.8.1a2.dev66
+
+pyocd-0.8.1a2.dev66.tar.gz will now exist in the ./dist/ directory
+of the pyOCD git tree.
 
  -- Neil Williams <codehelp@debian.org>  Fri, 28 Jul 2017 09:49:31 +0100
 
