@@ -3,8 +3,23 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-export PYBUILD_NAME=pyocd
+include /usr/share/dpkg/pkg-info.mk
+
+export BUILD_DATE=$(shell LC_ALL=C date -u "+%B %d, %Y" -d @"$(SOURCE_DATE_EPOCH)")
+
+# Prevent setuptools/distribute from accessing the internet.
+export http_proxy = http://127.0.9.1:9
+
 
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@ --with python3
+
+override_dh_auto_build:
+	python3 setup.py build
+
+override_dh_auto_install:
+	python3 setup.py install --root=$(CURDIR)/debian/python3-pyocd/ --install-layout=deb
+
+override_dh_auto_clean:
+	python3 setup.py clean -a
 

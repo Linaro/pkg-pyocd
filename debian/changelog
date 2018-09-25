@@ -1,3 +1,9 @@
+pyocd (0.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Neil Williams <codehelp@debian.org>  Tue, 25 Sep 2018 11:27:31 +0100
+
 pyocd (0.8.1a2.dev66-1) unstable; urgency=medium
 
   * Initial packaging for Linaro.
